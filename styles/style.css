@@ -1,0 +1,127 @@
+:root {
+  /* Primary Colors */
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* Neutral Color */
+  --darkBlue: hsl(212, 21%, 14%);
+  --grayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --primaryFont: "Montserrat", sans-serif;
+  --secondaryFont: "Fraunces", serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primaryFont);
+  font-size: 1.4rem;
+  background-color: var(--cream);
+  color: var(--grayishBlue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.card {
+  padding: 3rem 1.5rem;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.card__img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+
+  -webkit-border-radius: 1rem 1rem 0 0;
+  -moz-border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card__content {
+  background-color: var(--white);
+  padding: 2rem 1.8rem;
+
+  -webkit-border-radius: 0 0 1rem 1rem;
+  -moz-border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card__category {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.card__perfume {
+  color: var(--darkBlue);
+  font-family: var(--secondaryFont);
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.card__paragraph {
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.card__prices {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.card__price--new {
+  font-family: var(--secondaryFont);
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin: 1.8rem 0 1.5rem;
+  color: var(--darkCyan);
+}
+
+.card__price--old {
+  text-decoration: line-through;
+}
+
+.card__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+
+  text-decoration: none;
+  padding: 1.5rem;
+  color: var(--white);
+  background-color: var(--darkCyan);
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.card__cart {
+  margin-right: 0.8rem;
+}
