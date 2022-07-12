@@ -23,27 +23,21 @@
   <body>
     <main class="card">
       <div class="card__flex">
-        <div class="card__images">
-          <picture>
-            <source
-              sizes="(max-width: 767px) 686px,
-                      (max-width: 786px) 600px"
-              srcset="
-                images/image-product-mobile.jpg  686w,
-                images/image-product-desktop.jpg 600w
-              "
-              type="image/jpeg"
-            />
-            <img
-              class="card__img"
-              loading="lazy"
-              decoding="async"
-              src="images/image-product-desktop.jpg"
-              alt="Image"
-              width="500"
-              height="300"
-            />
-          </picture>
+        <div class="images">
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+            class="images__mobile"
+            width="345"
+            height="240"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+            class="images__desktop"
+            width="345"
+            height="400"
+          />
         </div>
         <div class="card__content">
           <h2 class="card__category">P E R F U M E</h2>

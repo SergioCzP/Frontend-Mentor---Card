@@ -50,7 +50,7 @@ img {
   max-width: 40rem;
 }
 
-.card__img {
+.images__mobile {
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -58,6 +58,10 @@ img {
   -webkit-border-radius: 1rem 1rem 0 0;
   -moz-border-radius: 1rem 1rem 0 0;
   border-radius: 1rem 1rem 0 0;
+}
+
+.images__desktop {
+  display: none;
 }
 
 .card__content {
@@ -72,6 +76,7 @@ img {
 .card__category {
   margin-top: 0;
   font-size: 1.4rem;
+  letter-spacing: 0.06rem;
   font-weight: lighter;
 }
 
@@ -80,12 +85,12 @@ img {
   font-family: var(--secondaryFont);
   font-size: 3.4rem;
   font-weight: 700;
-  margin-top: 0;
+  margin: 0 0 1.5rem;
 }
 
 .card__paragraph {
   margin-top: 0;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 .card__prices {
@@ -113,9 +118,10 @@ img {
   font-weight: 900;
 
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 1.8rem 1.5rem;
   color: var(--white);
   background-color: var(--darkCyan);
+  margin: 0.5rem 0;
 
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -123,5 +129,5 @@ img {
 }
 
 .card__cart {
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
